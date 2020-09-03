@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RegistrationForm</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="name">Full Name</string>
+    <string name="phone">Phone number</string>
+    <string name="password">Password</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="tt">I needy have an account?</string>
+    <string name="og">Already have an account?</string>
+    <string name="in">Log in</string>
+</resources>
