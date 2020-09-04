@@ -15,12 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textView.findViewById(R.id.go);
+        textView = findViewById(R.id.go);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,RActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 

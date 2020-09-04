@@ -17,22 +17,24 @@ public class RActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_r);
 
-        imageView.findViewById(R.id.imageView2);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(RActivity.this,MainActivity.class);
-                finish();
-            }
-        });
-        textView.findViewById(R.id.in);
+        textView = findViewById(R.id.in);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RActivity.this,MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
 
+        imageView = findViewById(R.id.imageView2);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
